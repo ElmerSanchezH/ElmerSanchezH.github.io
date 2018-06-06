@@ -227,6 +227,9 @@ ul li {
 	width: 930px;
 	margin: 0 auto;
 	padding: 0 25px;
+	position: absolute;
+	top:  50px; 
+	left: 50px;
 }
 
 #templatemo_top_row .top_row_box {
