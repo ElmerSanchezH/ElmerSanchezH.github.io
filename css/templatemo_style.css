@@ -1,500 +1,513 @@
-
-body {
-	margin:0px;
-	padding:0px;
-	color:#717174;
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size:13px;
-	line-height:1.5em; 
-	background-color: #121213;
-}
-
-a, a:link, a:visited {
-	color:#c0c0c2;
-}
-
-a:hover {
-	color: #00FFFF;
-	text-decoration:none;
-}
-
-p { margin: 0px; padding: 0 0 10px 0; }
-img { border: none; }
-
-h1, h2, h3, h4, h5 { font-weight: normal; }
-
-h1 { font-size: 40px; color: #fff; margin: 0 0 30px 0; padding: 5px 0; }
-h2 { font-size: 32px; color: #fff; margin: 0 0 20px 0; padding: 0; }
-h3 { font-size: 21px; color: #fff; margin: 0 0 20px 0; padding: 0; }
-h4 { font-size: 18px; color: #fff; margin: 0 0 10px 0; padding: 0; }
-h5 { font-size: 16px; color: #fff; margin: 0 0 10px 0; padding: 0; }
-h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
-
-.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
-
-.cleaner_h10 { clear: both; width:100%; height: 10px; }
-.cleaner_h20 { clear: both; width:100%; height: 20px; }
-.cleaner_h30 { clear: both; width:100%; height: 30px; }
-.cleaner_h40 { clear: both; width:100%; height: 40px; }
-.cleaner_h50 { clear: both; width:100%; height: 50px; }
-.cleaner_h60 { clear: both; width:100%; height: 60px; }
-
-.float_l {
-	float: left;
-}
-
-.float_r {
-	float: right;
-}
-
-.image_wrapper {
-	padding: 8px;
-	border: 1px solid #333;
-	background: #000;
-	margin-bottom: 10px;
-}
-.fl_img {
-	float: left;
-	margin: 3px 30px 15px 0;
-}
-.fr_img {
-	float: right;
-	margin: 3px 0 15px 15px;
-}
-
-blockquote { font-style: italic; }
-cite { font-weight: bold; }
-cite span { color: #fff; }
-
-.button a {
-	clear: both;
-	display: block;
-	width: 109px;
-	height: 30px;
-	padding: 4px 0 0 0;
-	background:	url(../images/templatemo_button.png) no-repeat;
+﻿/* 		
+	Elmer Sanchez
 	
 	
-	color: #ccc;
-	font-weight: bold;
-	font-size: 11px;
-	text-align: center;
-	text-decoration: none;
-}
+	Tabla de contenidos
+		1. Estilos universales
+		2. Estilos de cabeceras
+		3. Estilos del Menu
+		4. Estilos Menu Resposivo
+		5. Estilos de Inicio
+		6. Estilos acerca
+		7. Estilos de sevicios
+		8. Estilos Portafolio
+		9. Estilos Testimonials
+		10. Estilos de Contacto
+		11. Estilos pie de pagina(footer)
+		12. Media Queries
 
-.button a:hover {
-	color: #fff;
-	background: url(../images/templatemo_button_hover.png) no-repeat;
-}
+	Codigo de Colores
+		Orange: #ffc601, rgb(255,198,1)
+		Dark: #1d1d1d, rgb(29,29,29)
+		Light gray: #eaeaea
+---------------------------------------------------------*/
+
+/* 1. Estilos universales
+--------------------------------------*/
+*, body { font-family: 'Open Sans', sans-serif; }
+body { overflow-x: hidden; }
+body, h1 { margin: 0; }
 
 ul {
-	margin: 20px;
-	padding: 0;
-	list-style-image:  url(../images/list_icon.png);
-}
-
-ul li {
-	margin: 0 0 15px 0;
-	padding: 0 0;
-}
-
-/* menu */
-
-#templatemo_menu_wrapper {
-	width: 100%;
-	height: 50px;
-    background: url(../images/templatemo_menu_wrapper.jpg) repeat-x;
-}
-
-#templatemo_menu {
-	width: 920px;
-	height: 50px;
-	margin: 0 auto;
-	padding: 0 30px;
-	background: url(../images/templatemo_menu.jpg) no-repeat;
-}
-
-#templatemo_menu ul {
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-}
-
-#templatemo_menu ul li{
-	padding: 0px;
-	margin: 0px;
-	display: inline;
-}
-
-#templatemo_menu ul li a{
-	float: left;
-	display: block;
-	width: 124px;
-	height: 38px;
-	padding: 12px 0 0 0;
-	margin-right: 1px;
-	text-align: center;
-	font-size: 16px;
-	text-decoration: none;
-	color: #d8d3bd;	
-	font-weight: normal;
-	outline: none;
-}
-
-#templatemo_menu li a:hover, #templatemo_menu li .current{
-	color: #fff;
-	background: url(../images/templatemo_menu_hover.png) no-repeat;
-}
-
-
-/* end of menu */
-
-/* header */
-
-#templatemo_header_wrapper {
-	width: 100%;
-	height: 250px;
-    background: url(../images/templatemo_header_wrapper.jpg) repeat-x;
-	border-bottom: 1px solid #000;
-}
-
-#templatemo_header {
-	overflow: hidden;
-	width: 920px;
-	height: 210px;
-	padding: 20px 30px;
-	margin: 0 auto;
-	background: url(../images/templatemo_header.jpg) no-repeat;
-}
-
-#templatemo_header  #site_title {
-	float: left;
-	padding: 40px 20px 0 100px;
-}
-
-#templatemo_header  #site_title h1 {
 	margin: 0;
 	padding: 0;
 }
 
-#templatemo_header  #site_title h1 a{
-	margin: 0px;
-	padding: 0px;
-	font-size: 30px;
-	color: #ffffff;
-	font-weight: normal;
+.blue {
+	color: #3CF;
+}
+
+.green {
+	color: #CF6;
+}
+
+.tm-orange-text { color: #ffc601; }
+.tm-orange-bg {	background-color: #ffc601; }
+.tm-orange-bg-transparent {	background-color: #967702; }
+.tm-white-text { color: #fff; }
+.tm-dark-text {	color: #1d1d1d; }
+.tm-dark-bg { background-color: #1d1d1d; }
+.tm-light-gray-text { color: #eaeaea; }
+
+a.tm-light-gray-text:hover {
+	color: #fff;
 	text-decoration: none;
 }
-
-#templatemo_header  #site_title h1 a span {
-	display: block;
-	text-align: left;
-	font-size: 14px;
-	color: #5f6675;
-	font-weight: bold;
-	letter-spacing: 2px;
-}
-
-#templatemo_header #templatemo_slider {
-	float: right;
-	width: 430px;
-	height: 200px;
-	padding: 10px;
-	background: url(../images/templatemo_slider.png) no-repeat;
-	
-}
-
-/* end of header */
-
-/* top row */
-
-#templatemo_top_row_wrapper {
-	clear: both;
-	width: 100%;
-	height: 160px;
-	background: url(../images/templatemo_top_row.jpg) repeat-x; 
-	border-bottom: 1px solid #000;
-}
-
-#templatemo_top_row {
-	width: 930px;
-	margin: 0 auto;
-	padding: 0 25px;
+.margin-top-50 { margin-top: 50px; }
+.hide {
 	position: absolute;
-	top:  50px; 
-	left: 50px;
+	left: -1000px;
+	top: -1000px;
 }
 
-#templatemo_top_row .top_row_box {
-	overflow: hidden;
-	float: left;
-	width: 250px;
-	height: 110px;
-	padding: 20px 45px 20px 15px;
-	background: url(../images/templatemo_top_row_divider.png) right center no-repeat;
+
+.absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  height: 120px;
 }
-
-#templatemo_top_row .last {
-	background: none;
-}
-
-#templatemo_top_row p {
-	color: #777270;
-}
-
-/* end of top row */
-
-/* content*/
-
-#templatemo_content_wrapper {
-	clear: both;
+.tm-border {
+	height: auto;
 	width: 100%;
-	border-bottom: 1px solid #282829;	
+}
+.container { max-width: 1000px; }
+
+/* 2. Estilos de cabeceras
+--------------------------------------*/
+.templatemo-header {	
+	background-image: url(../images/templatemo-header.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: auto;
+	-moz-background-size: auto;
+	-o-background-size: auto;
+	background-size: auto;
+	min-height: 250px;
+}
+.templatemo-header-inner {	padding-top: 30px; }
+.templatemo-logo {
+	font-size: 60px;
+	font-weight: 700;
 }
 
-#templatemo_content {
-	width: 930px;
-	padding: 60px 30px;
+/* 3. Estilos del Menu
+--------------------------------------*/
+.templatemo-nav {
+	margin-bottom: 0;
+	padding-top: 20px;
+}
+.templatemo-nav li {
+	display: inline-block;
+	list-style: none;
+}
+.templatemo-nav li>a {
+	background-color: rgba(0,0,0,0);
+	color: #000;
+	padding: 10px;
+	transition: background-color 0.5s ease;
+	-webkit-transition: background-color 0.5s ease;
+}
+.templatemo-nav li>a:hover, .templatemo-nav li>a.active {
+	background-color: rgb(0,0,0);
+	color: #fed222;
+	text-decoration: none;	
+}
+
+/* 4. Estilos Menu Resposivo
+--------------------------------------*/
+#responsive-menu {
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: rgba(243, 243, 243, 0.4);
+  position: fixed;
+  z-index: 5500;
+  right: -1500px;
+  display: none;
+  overflow: auto;
+}
+#responsive-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#responsive-menu ul li {
+  display: block;
+  margin-bottom: 2px;
+}
+#responsive-menu ul li a {
+  padding: 12px 18px;
+  background-color: #1d1d1d;
+  color: #fed222;
+  display: block;
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  text-transform: uppercase;
+}
+#responsive-menu ul li a i {  margin-right: 15px; }
+a#mobile_menu {
+  font-size: 24px;
+  background-color: rgba(255,198,1,0.8);
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 5500;
+}
+
+/* 5. Estilos de Inicio
+--------------------------------------*/
+.tm-home-title, .tm-home-subtitle {	font-weight: 700; }
+.tm-home-title {
+	color: #fff;
+	font-size: 30px;	
+}
+.tm-home-subtitle {	font-size: 18px; }
+.tm-home-description {
+	font-size: 14px;
+	color: #828282;
+	margin-bottom: 50px;
+	text-align: justify;
+}
+.tm-home-more {
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 700;
+	padding: 10px 15px;
+}
+a.tm-home-more:hover {
+	color: #737373;
+	text-decoration: none;
+}
+.tm-home-right { max-width: 350px; }
+
+/* 6. Estilos acerca
+--------------------------------------*/
+.canvas-wrap {
+	position: relative;
+	text-align: center;
+}
+.canvas-overlay {
+	cursor: pointer;
+	position: absolute;
+	-webkit-opacity: 0;
+  	-moz-opacity: 0;
+  	opacity: 0;
+  	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	top: 0; left: 0; bottom: 0; right: 0;
+	width: 226px;
+	height: 385px;
 	margin: 0 auto;
-
 }
-
-.two_column {
-	width: 430px;
+.canvas-overlay:hover {
+	-webkit-opacity: 1;
+  	-moz-opacity: 1;
+  	opacity: 1;
 }
-
-.services_section {
-	clear: both;
-	padding-bottom: 30px;
-	margin-bottom: 30px;
-	border-bottom: 1px solid #CCC;
-	background: url(images/templatemo_divider.jpg) bottom repeat-x;	
+.canvas-lines {	padding-top: 150px; }
+.canvas-lines .canvas-overlay {	top: 150px; }
+.canvas-overlay a {
+	color: #fff;
+	background-color: #ffc601;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
-
-.services_section h4 {
-	margin-bottom: 20px;
+.canvas-overlay a:hover {
+	color: #000;
+	text-decoration: none;
 }
-
-.services_section .left {
-	float: left; 
-	width: 150px;
-	margin-right: 30px;
+.member-name {
+	color: #ffc601;
+	font-size: 18px;
+	font-weight: 700;
 }
-
-.services_section .middle {
-	float: left; 
-	width: 350px;
-}
-
-.services_section .right {
-	float: right; 
-	width: 350px;
-}
-
-.services_section .left img {
-	border:1px solid #CCC;
-	padding: 5px;
-}
-
-/* post */
-
-.post_box {
-	clear: both;
-	padding-bottom: 30px;
-	margin-bottom: 30px;
-	background: url(images/hor_divider.jpg) bottom repeat-x;	
-}
-
-.post_box .post_content {
-	clear: both;
-	margin: 10px 0;
-}
-.post_content .left {
-	float: left; 
-	width: 300px;
-}
-
-.post_content .left img {
-	width: 280px;
-	height: 160px;
-	border:1px solid #000;
-	padding: 5px;
-	background: #1a1b1c;
-}
-
-.post_content .right {
-	float: right; 
-	width: 600px;
-}
-
-.post_content h2 {
+.member-title {	color: #fff; }
+.tm-about-title, .tm-about-subtitle, .tm-about-subtitle-2 {	font-weight: 700; }
+.tm-about-title { font-size: 85px; }
+.tm-about-subtitle {
+	font-size: 44px;
+	margin-top: 5px;
 	margin-bottom: 5px;
 }
-
-.post_box p {
-	padding-bottom: 5px;
-	margin: 20px 0 10px 0;
-}
-
-.post_section .post_info{
-	font-style: italic;
-}
-
-.post_box .comment_tab {
-	padding: 10px 0;
-	margin: 40px 0 20px 0;
-	border-bottom: 1px dashed #666;
-	font-size: 20px;
-	font-weight: bold;
-}
-
-
-/* end of post */
-
-/* gallery */
-#gallery {
-		width: 930px;
-		padding: 40px 0;
-	}
-	#gallery ul { list-style: none; margin: 0; padding: 0; }
-	#gallery ul li {
-		float: left;
-		display: inline; 
-		padding: 0;
-		margin: 0;
-		width: 245px;
-		margin: 0 60px 60px 0;
-	}
-	
-	#gallery ul li h5 {
-		padding-bottom: 15px;
-		margin-bottom: 15px;
-		border-bottom: 1px dotted #CCC;
-	}
-	 
-	#gallery ul img {
-		width: 245px;
-		height: 130px;
-		border: none;
-		margin-bottom: 10px;
-	}
-/* end of gallery */
-#contact_form {
-	float: left;
-	padding: 0;
-}
-
-#contact_form form {
-	margin: 0px;
-	padding: 0px;
-	/*border:1px solid #e2d1be;
-	padding: 20px 20px 10px 20px; */
-}
-
-#contact_form form .input_field {
-	height: 18px;
-	width: 260px;
-	background: #222222;
-	border: 1px solid #666666;
-	color: #CCCCCC;
-	padding: 4px;
-}
-
-#contact_form form label {
-	display: block;
-	width: 100px;
-	margin-right: 10px;
-	font-size: 14px;	
-}
-
-#contact_form form textarea {
-	width: 350px;
-	height: 150px;
-	background: #222222;
-	border: 1px solid #666666;
-	color: #CCCCCC;
-	padding: 4px;
-}
-
-#contact_form form .submit_btn {
-	margin-right: 80px;
-	padding: 5px 10px;
-	background: #222222;
-	border: 1px solid #666666;
-	color: #CCCCCC;
-}
-
-
-/* end of content */
-
-/* footer */
-
-#templatemo_footer_wrapper {
-	clear: both;
-	width: 100%;
-	background: #090909;
-	border-top: 1px solid #000;	
-	border-bottom: 1px solid #000;
-}
-
-#templatemo_footer {
-	width: 930px;
-	padding: 45px 30px;
-	margin: 0 auto;
-	color: #d8d3bd;
-}
-
-.footer_box {
-	float: left;
-	width: 280px;
-	padding: 0 30px 0 0;
-}
-
-.footer_menu {
-	margin: 0;
-	padding: 0;
+.tm-about-subtitle-2 { font-size: 17px; }
+.tm-about-description {	font-size: 14px; }
+.tm-about-description ul li {
+	line-height: 1.8em;
 	list-style: none;
 }
-
-.footer_menu li {
-	margin: 0;
-	padding: 5px 0;
+.tm-about-description ul li:before { 
+	content:"•"; 
+	font-size:10pt;
+	padding-right: 5px;
 }
 
-.footer_menu li a {
-	color: #d8d3bd;
+/* 7. Estilos de sevicios
+--------------------------------------*/
+.templatemo-services {
+	background-image: url('../images/railway.jpg');
+	background-repeat: repeat-y;
+	background-position: center center;
+	position: relative;
 }
-
-.footer_menu li a:hover {
-	color: #fff;
-}
-
-#templatemo_footer img{
-	padding: 4px;
-	background: #000;
-	border: 1px solid #34322f;
-	margin-bottom: 10px;
-}
-
-/* end of footer */
-
-/* copyright */
-
-#templatemo_copyright_wrapper {
+.tm-pricing-table {
+	padding: 30px;
+	max-width: 260px;
 	width: 100%;
-	background: #000000;
-	border-top: 1px solid #262626;
 }
+.tm-pricing-table-container {
+	display: inline-block;
+	margin-right: 30px;
+}
+.tm-pricing-table-container:last-child { margin-right: 0px; }
+.table-big {
+	height: 480px;
+	max-width: 300px;
+	width: 100%;
+}
+.tm-pricing-header {
+	border-bottom: 1px solid #ffc601;
+	font-size: 22px;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+.tm-pricing-table ul li {
+	list-style: none;
+	line-height: 2em;
+}
+.price-tag {
+	background-color: #ffc601;
+	border-radius: 50%;
+	color: #1d1d1d;
+	display: inline-block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 120px;
+	height: 120px;
+	vertical-align: middle;
+}
+.price-tag-inner { margin-top: 10px; }
+.price-tag .dollar {
+	font-size: 30px;
+	font-weight: 700;
+	vertical-align: middle;
+}
+.price-tag .price {
+	font-size: 50px;
+	font-weight: 700;
+	vertical-align: middle;
+}
+.price-tag .month {	display: block; }
 
-#templatemo_copyright {
-	width: 960px;
-	margin: 0 auto;
-	padding: 15px 20px;
+/* http://stackoverflow.com/questions/5763911/placing-a-div-within-a-canvas */
+.canvas-wrap { position: relative; }
+.overlay { 
+	position: absolute; 
+	top: 20%;
+	left: 40%;
+}
+.overlay p { font-weight: 700; }
+a:hover .overlay p { color: #7b7b7b; }
+
+/* 8. Estilos Portafolio
+--------------------------------------*/
+.tm-portfolio-images-container { overflow: hidden; }
+.tm-image-container {
+	float: left;
+	position: relative;
+	max-width: 323px;
+	width: 33%;
+}
+.tm-image-container img { width: 100%; }
+.tm-portfolio-image-overlay {
+	background-color: rgba(255,198,1,1);
+	cursor:pointer;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	width: 100%;
+}
+.tm-portfolio-image-overlay:hover {	opacity: 1; }
+.tm-portfolio-image-overlay a {
+	color: #ffc601;
+	background-color: #fff;
+	border-radius: 50%;
+	height: 30px;
+	line-height: 30px;
 	text-align: center;
-	color: #6e6965;
+	width: 30px;
+}
+.tm-portfolio-image-overlay a:hover {
+	background-color: #000;
+	text-decoration: none;
+}
+.tm-portfolio-image-overlay h2 { font-size: 14px; }
+.tm-view-more {
+	display: inline-block;
+	border: 1px solid #fff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	width: 180px;
+}
+a.tm-view-more:hover {
+	background-color: #ffc601;
+	color: #000;	
+}
+a.tm-view-more:focus {
+	color: #fff;
+	text-decoration: none;
 }
 
-#templatemo_copyright a {
-	color: #6e6965;
+/* 9. Estilos Testimonials
+--------------------------------------*/
+.img-container {	
+	display: inline-block;
+	vertical-align: middle;
+	width: 170px;
+	height: 170px;
+	position: relative;
 }
-/* end of copyright */
+.tm-img-circle-border img {	
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	vertical-align: middle;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.tm-img-circle-border {
+	border: 1px solid #ffc601;
+	border-radius: 50%;
+	cursor: pointer;
+	padding: 4px;
+	width: 130px;
+	height: 130px;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.tm-img-circle-border.active img {
+	width: 150px;
+	height: 150px;
+}
+.tm-img-circle-border.active {
+	border: 3px solid #ffc601;
+	width: 170px;
+	height: 170px;
+	padding: 7px;
+}
+p.tm-author {
+	font-weight: 700;
+	font-style: italic;
+	margin: 10px 0 0 0;
+}
+hr.tm-author-name-underline {
+	height: 1px;
+	width: 80px;
+	border: none;
+    color: #ffc601; /* old IE */
+    background-color: #ffc601; /* Modern Browsers */
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+/* 10. Estilos de Contacto
+--------------------------------------*/
+#map-canvas { height: 350px; }
+.form-control, .btn { border-radius: 0; }
+.form-control {
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(46, 43, 43, 0.27);
+	font-size: 12px;
+}
+.form-control:focus {
+	border-color: #858585;	
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(46, 43, 43, 0.3);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(46, 43, 43, 0.3);
+	outline: 0;
+}
+.tm-send-btn {
+	font-size: 12px;
+	padding: 8px 35px;
+}
+.tm-send-btn:hover { color: #fff; }
+
+/* 11. Estilos pie de pagina(footer)
+--------------------------------------*/
+footer {
+	background-color: #1d1d1d;
+	color: #898888;
+	padding: 15px 0;
+	position: relative;
+}
+footer p {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+/* 12. Media Queries
+--------------------------------------*/
+@media screen and (max-width: 992px) {
+	.container { max-width: 940px; }
+	.templatemo-logo { font-size: 50px; }
+	.templatemo-nav li>a { padding: 8px 5px; }
+	.tm-about-right { text-align: center; }
+	.canvas-lines {	padding-top: 0px; }
+	.canvas-lines .canvas-overlay {	top: 0px; }
+	.tm-pricing-table-container { margin-right: 0px; }
+	.templatemo-services .container {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}		
+}
+@media screen and (max-width: 767px) {
+	.tm-home-right {
+		margin-top: 40px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.tm-pricing-table-container { margin-right: 0px; }
+	.tm-pricing-table {	margin: 0 auto;	}
+	.overlay p { text-align: center; }
+	#map-canvas { margin-bottom: 30px; }
+}
+@media screen and (max-width: 614px) {
+	.tm-portfolio-images-container {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.tm-image-container { width: 50%; }
+}
+
+@media screen and (max-width: 479px) {
+	.tm-image-container {
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+	}
+}
