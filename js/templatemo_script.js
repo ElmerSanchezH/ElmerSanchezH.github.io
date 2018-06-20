@@ -283,12 +283,12 @@ function setupPortfolioSection() {
     $('.tm-show-hide').hide();
 
     $('.tm-view-more').click(function(){
-        if($(this).text().toLowerCase() == "view more") {
-            $(this).text("View Less");
+        if($(this).text().toLowerCase() == "ver mas") {
+            $(this).text("Ver Menos");
             $('.tm-show-hide').show();
         }
         else {
-            $(this).text("View More");
+            $(this).text("ver mas");
             $('.tm-show-hide').hide();
         }
     });
